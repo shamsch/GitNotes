@@ -1,6 +1,6 @@
 # Git Notes by Shamsur
 
-It oftens happens so that I need to figure out an issue with Git, so I look up on StackOverflow and forget about it. However, these issues recurr so often that I want to keep the solution that "worked" noted somewhere so I don't have to go through the trouble of searching through StackOverflow again. So here it is. Git and GitHub related issues that I encontered and found a solution for.
+It happens so often that I need to figure out an issue with Git, so I look it up on StackOverflow, find a solution, and forget about it. However, these issues recurr so often that I want to keep the solution that "worked" stored somewhere so I don't have to go through the trouble of searching through StackOverflow again. So here it is. Git and GitHub related issues that I encountered and found a solution for.
 
 <hr/>
 
