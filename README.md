@@ -23,3 +23,24 @@ This is a classic. It's pretty easy to fix this in local repo, but it takes a fe
 [Reference](https://stackoverflow.com/a/35291514/19196138)
 
 <hr/>
+
+### Resolving merge conflicts - choosing between incoming and current changes 
+I had this situation where I had deleted some files in one branch that still existed in another. I had to merge the other branch into my current branch, but I had to choose between the incoming changes and the current changes. To resolve this, I had to do the following:
+
+**Steps:**
+1. Make sure you are in the branch you want to merge into.
+
+2. `git merge other_branch_name`
+
+3. `git checkout --ours file_name` if you want to keep the current changes.
+
+    or, 
+
+    `git checkout --theirs file_name` if you want to keep the incoming changes.
+4. In my case, going for the former option would mean despite those files being deleted in the other branch with which the merge was done, I would still have those files in my current branch because I had not deleted them in the current branch. The latter option would mean I would have deleted those files in the current branch too in doing the merge. 
+
+5. To wrap it up `git add .` and `git commit -m "Merge other_branch_name"` to commit the changes you made.
+
+[Reference](https://linuxpip.org/git-accept-all-incoming-changes/#:~:text=all%20of%20them.-,Git%20%3A%20accept%20all%20current%20changes,will%20keep%20the%20original%20one.)
+
+<hr/>
