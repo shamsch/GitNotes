@@ -44,3 +44,15 @@ I had this situation where I had deleted some files in one branch that still exi
 [Reference](https://linuxpip.org/git-accept-all-incoming-changes/#:~:text=all%20of%20them.-,Git%20%3A%20accept%20all%20current%20changes,will%20keep%20the%20original%20one.)
 
 <hr/>
+
+### WSL GIT finds all the files modified if they were created in Windows environment
+Running git status on Windows will have all files staged and committed, but if you run it on WSL, it will only show the files that are modified. It is because of line endings. WSL thinks it is linux so it will use LF as the line endings. To fix this, you can do the following:
+
+**Steps:**
+1. Run the following command in WSL terminal:
+
+`git config --global core.autocrlf true`
+
+[Reference](https://github.com/microsoft/WSL/issues/184#issuecomment-209913528)
+
+<hr/>
