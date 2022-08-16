@@ -46,7 +46,7 @@ I had this situation where I had deleted some files in one branch that still exi
 <hr/>
 
 ### WSL GIT finds all the files modified if they were created in Windows environment
-Running git status on Windows will have all files staged and committed, but if you run it on WSL, it will only show the files that are modified. It is because of line endings. WSL thinks it is linux so it will use LF as the line endings. To fix this, you can do the following:
+Running `git status` on Windows will have all files staged and committed, but if you run it on WSL, it will show the same files are all modified. It is because of line endings. WSL thinks it is linux so it will use LF as the line endings. To fix this, you can do the following:
 
 **Steps:**
 1. Run the following command in WSL terminal:
