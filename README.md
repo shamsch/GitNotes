@@ -56,3 +56,16 @@ Running `git status` on Windows will have all files staged and committed, but if
 [Reference](https://github.com/microsoft/WSL/issues/184#issuecomment-209913528)
 
 <hr/>
+
+### Git ignore not working
+
+Git ignore not working on files commited before `.gitignore` was added. 
+
+**Steps**
+1. Run 
+```bash
+git rm -rf --cached .
+git add .
+```
+[Reference](https://stackoverflow.com/a/25436481/19196138)
+
